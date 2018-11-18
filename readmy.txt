@@ -1,0 +1,17 @@
+### Run tensorflow on Polus:
+1. Run PowerAI container (Docker)
+```
+nvidia-docker run --rm -it powerai:yk /bin/bash
+```
+2. Activate Tensorflow
+```
+. /opt/DL/tensorflow/bin/tensorflow-activate
+```
+3. Test MNIST with tensorflow (optional). 
+Copy code from:
+  https://raw.githubusercontent.com/aymericdamien/TensorFlow-Examples/master/examples/3_NeuralNetworks/neural_network_raw.py
+and save it to test.py. 
+Testing:
+```
+python test.py
+```
